@@ -13,14 +13,19 @@ assert convertTemp(10,'C') == 50
 assert converTemp(32,'F') == 0
 """
 
-def convertTemp():
-    return
+def convertTemp(d, t):
+    if t == "C":
+        c = round(d*9/5 + 32, 2)
+    elif t == "F":
+        c = round((d-32)*5/9, 2)
+    return c
+
 
 def tests():
-    assert convertTemp(10,'C') == 50.00
-    assert convertTemp(32,'F') == 0.00
-    assert convertTemp(100,'C') == 212.00
-    assert convertTemp(100,'F') == 37.78
+    print(convertTemp(10,'C')) == 50.00
+    print(convertTemp(32,'F')) == 0.00
+    print(convertTemp(100,'C')) == 212.00
+    print(convertTemp(100,'F')) == 37.78
     
     
 

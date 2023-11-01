@@ -14,9 +14,11 @@ assert btcTocad(1) == 45000
 (2 points) 
 """
 
-def btcTocad():
-    pass
+def btcTocad(a):
+    a = a*45000
+    return a
 
+print(btcTocad(4))
 
 """
 This checks to see if you are running the program as the main script or
